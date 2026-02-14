@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al Moallem Al Thaki - المعلم الذكي</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --app-text-scale: 1;
+      }
+      body {
+        font-family: 'Poppins', 'Cairo', sans-serif;
+        background: radial-gradient(circle at top, #f8fafc, #e2e8f0);
+        min-height: 100vh;
+        overflow-x: hidden;
+        font-size: calc(16px * var(--app-text-scale));
+        color: #1e293b;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      
+      body.dark-mode {
+        background: radial-gradient(circle at top, #0f172a, #1e293b);
+        color: #f8fafc;
+      }
+
+      .arabic-font {
+        font-family: 'Cairo', sans-serif;
+      }
+      
+      /* 3D Card/Button Logic */
+      .card-3d {
+        position: relative;
+        border-radius: 2rem;
+        transition: all 0.1s ease;
+        top: 0;
+        border: 2px solid rgba(255,255,255,0.2);
+      }
+      
+      .card-3d:active {
+        top: 6px;
+      }
+
+      /* Depth Shadow colors for 3D buttons */
+      .depth-orange { box-shadow: 0 8px 0 #c2410c; }
+      .depth-orange:active { box-shadow: 0 2px 0 #c2410c; }
+      
+      .depth-green { box-shadow: 0 8px 0 #15803d; }
+      .depth-green:active { box-shadow: 0 2px 0 #15803d; }
+      
+      .depth-red { box-shadow: 0 8px 0 #b91c1c; }
+      .depth-red:active { box-shadow: 0 2px 0 #b91c1c; }
+      
+      .depth-yellow { box-shadow: 0 8px 0 #a16207; }
+      .depth-yellow:active { box-shadow: 0 2px 0 #a16207; }
+      
+      .depth-cyan { box-shadow: 0 8px 0 #0e7490; }
+      .depth-cyan:active { box-shadow: 0 2px 0 #0e7490; }
+      
+      .depth-purple { box-shadow: 0 8px 0 #6d28d9; }
+      .depth-purple:active { box-shadow: 0 2px 0 #6d28d9; }
+      
+      .depth-pink { box-shadow: 0 8px 0 #be185d; }
+      .depth-pink:active { box-shadow: 0 2px 0 #be185d; }
+
+      .depth-blue { box-shadow: 0 8px 0 #1d4ed8; }
+      .depth-blue:active { box-shadow: 0 2px 0 #1d4ed8; }
+      
+      .depth-indigo { box-shadow: 0 8px 0 #4338ca; }
+      .depth-indigo:active { box-shadow: 0 2px 0 #4338ca; }
+
+      .icon-sphere {
+        background: white;
+        border-radius: 50%;
+        box-shadow: inset 0 -4px 8px rgba(0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .dark-mode .icon-sphere {
+        background: #334155;
+        box-shadow: inset 0 -4px 8px rgba(0,0,0,0.4), 0 4px 6px rgba(0,0,0,0.5);
+      }
+
+      /* Transitions */
+      .page-transition {
+        animation: scaleUp 0.3s ease-out;
+      }
+      @keyframes scaleUp {
+        from { opacity: 0; transform: scale(0.95); }
+        to { opacity: 1; transform: scale(1); }
+      }
+
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-ZvFyjZzJ.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
